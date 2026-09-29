@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Симулятор схем</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="toolbar">
+    <div class="toolbar-title">⚙️ Симулятор схем</div>
+
+    <button class="tool-btn" id="btnBattery"    title="Батарейка «Крона» 9V"><span class="icon">🔋</span> Крона 9V</button>
+    <button class="tool-btn" id="btnBattery15"  title="Батарейка «AA» 1.5V"><span class="icon">🪫</span> AA 1.5V</button>
+    <button class="tool-btn" id="btnLamp"       title="Лампочка"><span class="icon">💡</span> Лампа</button>
+    <button class="tool-btn" id="btnSwitch"     title="Ключ (включатель)"><span class="icon">🔘</span> Ключ</button>
+    <button class="tool-btn" id="btnMultimeter" title="Мультиметр"><span class="icon">🔬</span> Мультиметр</button>
+
+    <div class="divider"></div>
+
+    <button class="tool-btn danger" id="btnClear"><span class="icon">🗑</span> Очистить</button>
+    <button class="tool-btn" id="btnGrid"><span class="icon">▦</span> Сетка: вкл</button>
+
+    <button class="tool-btn run-btn" id="btnSim"><span class="icon">▶</span> Запустить моделирование</button>
+  </div>
+
+  <div class="canvas-wrap">
+    <canvas id="canvas" tabindex="0"></canvas>
+  </div>
+
+  <div class="statusbar">
+    <span class="hint" id="status">Клетка: 20 px | Курсор: —</span>
+  </div>
+
+</div>
+
+<script src="js/battery.js"></script>
+<script src="js/battery15.js"></script>
+<script src="js/lamp.js"></script>
+<script src="js/switch.js"></script>
+<script src="js/multimeter.js"></script>
+<script src="js/wire.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
